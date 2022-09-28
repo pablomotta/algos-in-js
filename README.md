@@ -7,5 +7,5 @@ Data Structures and Algorithms journey from AlgoExpert.io written in Javascript
 To run the algorithms, do the following:
 
 -   ` npm install -g nodemon`
--   `cd` into the folder of the desired algorithm
+-   `cd` into the folder of the desired topic.
 -   run `nodemon <algo-name>.js`
