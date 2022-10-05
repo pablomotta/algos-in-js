@@ -69,7 +69,7 @@ console.log(JSON.stringify(myLinkedList, null, 2));
 myLinkedList.append(5);
 myLinkedList.append(3);
 myLinkedList.prepend(1);
-myLinkedList.insert(1, 5);
+myLinkedList.insert(1, 2);
 
 console.log(JSON.stringify(myLinkedList, null, 2));
 console.log(myLinkedList.printList());
