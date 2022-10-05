@@ -10,9 +10,7 @@ class LinkedList {
 			value: value,
 			next: null,
 		};
-
 		this.tail = this.head;
-
 		this.length = 1;
 	}
 	append(value) {
@@ -29,6 +27,15 @@ class LinkedList {
 		this.length++;
 		return this;
 	}
+	printList() {
+		const array = [];
+		let currentNode = this.head;
+		while (currentNode !== null) {
+			array.push(currentNode.value);
+			currentNode = currentNode.next;
+		}
+		return array;
+	}
 }
 
 const myLinkedList = new LinkedList(10);
@@ -40,3 +47,4 @@ myLinkedList.append(3);
 myLinkedList.prepend(1);
 
 console.log(JSON.stringify(myLinkedList, null, 2));
+console.log(myLinkedList.printList());
