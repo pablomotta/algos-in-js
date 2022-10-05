@@ -9,41 +9,18 @@
  * Space = Constant, O(1)
  */
 
-let findMissing = function (input) {
-	//  calculate sum of all integers
-	//  in input list
-	let actualSum = 0;
-	for (let i in input) {
-		actualSum += input[i];
-	}
-	let n = input.length;
+const array = [3, 0, 1];
 
-	//find the sum of first n numbers using the arithmetic series sum formula,
-	// i.e.,​ ​(n∗(n+1))/2
-	let sumOfN = (n * (n + 1)) / 2;
+// G sum formula
+// O(n) time
+// O(1) space
+function findMissingNumberGSum(array) {
+	const sumOfArrayItems = array.reduce(
+		(partialSum, itemValue) => partialSum + itemValue,
+		0
+	);
+	const gSum = (array.length * (array.length + 1)) / 2;
+	return gSum - sumOfArrayItems;
+}
 
-	// The difference between sumOfN - actualSum, is the missing number in the array
-	return sumOfN - actualSum;
-};
-
-let v = [0];
-console.log('1. Original: ' + printArray(v));
-let missingNumber = findMissing(v);
-console.log('   The missing number is: ' + missingNumber);
-console.log(
-	'\n-----------------------------------------------------------------------------------------------------\n'
-);
-let v1 = [3, 7, 1, 2, 0, 4, 5];
-console.log('2. Original: ' + printArray(v1));
-let missingNumber1 = findMissing(v1);
-console.log('   The missing number is: ' + missingNumber1);
-console.log(
-	'\n-----------------------------------------------------------------------------------------------------\n'
-);
-let v2 = [9, 6, 4, 2, 3, 5, 7, 0, 1];
-console.log('3. Original: ' + printArray(v2));
-let missingNumber2 = findMissing(v2);
-console.log('   The missing number is: ' + missingNumber2);
-console.log(
-	'\n-----------------------------------------------------------------------------------------------------\n'
-);
+console.log(findMissingNumberGSum(array));
