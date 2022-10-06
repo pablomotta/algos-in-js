@@ -9,14 +9,14 @@
  * The memory complexity of this solution is linear, O(n).
  */
 
-let findSumOfTwo = function (A, val) {
+let findSumOfTwo = function (array, val) {
 	let foundValues = new Set();
-	for (let a in A) {
-		if (foundValues.has(val - A[a])) {
+	for (let item in array) {
+		if (foundValues.has(val - array[item])) {
 			return true;
 		}
 
-		foundValues.add(A[a]);
+		foundValues.add(array[item]);
 	}
 
 	return false;
