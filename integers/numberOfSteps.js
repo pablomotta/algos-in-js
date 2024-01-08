@@ -9,7 +9,7 @@ const numberOfSteps = (num) => {
         steps = steps + 1;
       }
     }
-    return steps;   
+    return steps;    
 }
 
 console.log(numberOfSteps(14))
