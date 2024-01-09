@@ -9,7 +9,6 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-// Approach 1
 var middleNode = function (head) {
   let first = head;
   let sec = head;
@@ -20,4 +19,10 @@ var middleNode = function (head) {
   }
 
   return first;
+};
+
+var middleNode2 = function (head) {
+  let A = [head];
+  while (A[A.length - 1].next != null) A.push(A[A.length - 1].next);
+  return A[Math.trunc(A.length / 2)];
 };
