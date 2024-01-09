@@ -9,4 +9,15 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var middleNode = function (head) {};
+// Approach 1
+var middleNode = function (head) {
+  let first = head;
+  let sec = head;
+
+  while (first != null && sec != null && sec.next != null) {
+    first = first.next;
+    sec = sec.next.next;
+  }
+
+  return first;
+};
