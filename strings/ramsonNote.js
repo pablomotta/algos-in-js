@@ -4,5 +4,6 @@
  * @return {boolean}
  */
 var canConstruct = function(ransomNote, magazine) {
+    console.log({ransomNote, magazine})
     
 };
