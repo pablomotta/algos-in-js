@@ -12,3 +12,6 @@ const canConstruct = function(ransomNote, magazine) {
     }
     return true 
 };
+
+// Test case 1 
+console.log(canConstruct('aa', 'ab')) // returns false 
