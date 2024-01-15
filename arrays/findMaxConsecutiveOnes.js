@@ -1,6 +1,7 @@
 /**
  * @param {number[]} nums
  * @return {number}
+https://leetcode.com/problems/max-consecutive-ones/description/
  */
 function findMaxConsecutiveOnes(nums) {
     let count = 0;
