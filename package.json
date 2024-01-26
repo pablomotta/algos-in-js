@@ -1,0 +1,23 @@
+{
+  "name": "algos-in-js",
+  "description": "Data Structures and Algorithms journey from AlgoExpert.io and Leetcode written in Javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablomotta/algos-in-js.git"
+  },
+  "author": "Pablo Motta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pablomotta/algos-in-js/issues"
+  },
+  "homepage": "https://github.com/pablomotta/algos-in-js#readme",
+  "dependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
